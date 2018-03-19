@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     uglify: {
       prod: {
         options: {
-          mangle: true, compress: true,
+          mangle: true, compress: { drop_console: true },
                   },
         src: 'dist/binarypack.js',
         dest: 'dist/binarypack.min.js'
